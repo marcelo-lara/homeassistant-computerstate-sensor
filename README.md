@@ -6,6 +6,13 @@ I want to turn off my office lights when my computer is locked.
 
 This is based on a script from [this thread from vlycop](https://community.home-assistant.io/t/linux-gnome-retreive-the-lock-or-unlock-state-of-your-linux-computer/181489)
 
+
+## Install
+
+
+
+
+
 ## Sensor reference
 
 ### Lock status

@@ -1,0 +1,15 @@
+# /home/user/.config/systemd/user/ha_desktop_status.service
+[Unit]
+Description=HomeAssistant Computer Status
+After=graphical-session.target
+After=network-online.target
+
+[Service]
+Type=simple
+Environment=PYTHONUNBUFFERED=1
+ExecStart=/usr/bin/python3  %h/.local/bin/ha_desktop_status.py
+
+Restart=on-failure
+
+[Install]
+WantedBy=graphical-session.target
